@@ -18,3 +18,11 @@ View your app in AI Studio: https://ai.studio/apps/drive/1XGsUcp2FWBVvMx9_bCGOjE
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Deploy to GitHub Pages
+
+1. Set the GitHub Pages source to **GitHub Actions** in your repository settings.
+2. If you are deploying to a project page (for example `https://user.github.io/repo/`), set
+   `VITE_BASE_URL=/repo/` in your workflow or repository secrets. For user/organization pages,
+   leave `VITE_BASE_URL` unset to default to `/`.
+3. Push to the `main` branch to trigger the deployment workflow.
